@@ -6,8 +6,9 @@ Inspired by: http://woss.name/2011/01/23/converging-your-home-directory-with-che
 * Install homebrew
 * You must own /usr/local
 
+```
     sudo chown -R `whoami`:staff /usr/local
-
+```
 
 License
 
