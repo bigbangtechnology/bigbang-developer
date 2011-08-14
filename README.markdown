@@ -7,6 +7,7 @@
 
 ## Prerequisites: 
 
+* git (http://code.google.com/p/git-osx-installer/)
 * Install GCC (https://github.com/kennethreitz/osx-gcc-installer)
 * Install homebrew (https://github.com/mxcl/homebrew)
 * You must own /usr/local
@@ -18,11 +19,15 @@
 ## TODO:
 
 * install mysql
+ * https://github.com/opscode/cookbooks/tree/master/mysql
 * install imagemagick
+ * https://github.com/opscode/cookbooks/tree/master/imagemagick
 * install ffmpeg
+ * https://github.com/37signals/37s_cookbooks/tree/master/ffmpeg
 * install ack
 * install rvm
 * install/configure nginx
+ * https://github.com/opscode/cookbooks/tree/master/nginx
 * setup cookbook for different applications we have
 
 ## License
