@@ -11,9 +11,11 @@
 * Install homebrew (https://github.com/mxcl/homebrew)
 * You must own /usr/local
 
+```
     sudo chown -R `whoami`:staff /usr/local
+```
 
-# TODO:
+## TODO:
 
 * install mysql
 * install imagemagick
@@ -23,8 +25,7 @@
 * install/configure nginx
 * setup cookbook for different applications we have
 
-
-License
+## License
 
 (The MIT License)
 
