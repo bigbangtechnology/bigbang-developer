@@ -1,14 +1,12 @@
 Big Bang Technology Developer Setup Script:
 Inspired by: http://woss.name/2011/01/23/converging-your-home-directory-with-chef/
 
-h1. Prerequisites: 
+# Prerequisites: 
 
 * Install homebrew
 * You must own /usr/local
 
-```
-sudo chown -R `whoami`:staff /usr/local
-```
+    sudo chown -R `whoami`:staff /usr/local
 
 
 License
