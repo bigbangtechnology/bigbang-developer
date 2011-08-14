@@ -1,12 +1,27 @@
-Big Bang Technology Developer Setup Script:
-Inspired by: http://woss.name/2011/01/23/converging-your-home-directory-with-chef/
+# Big Bang Technology Developer Setup Script:
 
-# Prerequisites: 
+## Inspired by: 
 
-* Install homebrew
+* http://woss.name/2011/01/23/converging-your-home-directory-with-chef/
+* http://robots.thoughtbot.com/post/8700977975/2011-rubyists-guide-to-a-mac-os-x-development
+
+## Prerequisites: 
+
+* Install GCC (https://github.com/kennethreitz/osx-gcc-installer)
+* Install homebrew (https://github.com/mxcl/homebrew)
 * You must own /usr/local
 
     sudo chown -R `whoami`:staff /usr/local
+
+# TODO:
+
+* install mysql
+* install imagemagick
+* install ffmpeg
+* install ack
+* install rvm
+* install/configure nginx
+* setup cookbook for different applications we have
 
 
 License
