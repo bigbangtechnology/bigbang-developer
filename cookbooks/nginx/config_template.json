@@ -10,13 +10,13 @@ http {
   sendfile on;
   keepalive_timeout 65;
 
-  passenger_root /Users/camwest/.rvm/gems/ruby-1.8.7-p352/gems/passenger-3.0.9;
-  passenger_ruby /Users/camwest/.rvm/bin/ruby;
+  passenger_root /Users/paul/.rvm/gems/ruby-1.9.2-p290/gems/passenger-3.0.9;
+  passenger_ruby /Users/paul/.rvm/bin/ruby;
 
   server {
     listen 8080;
     server_name *.woople.local;
-    root /Users/camwest/Sites/woople/public;
+    root /Users/paul/Sites/woople/public;
     passenger_enabled on;
     rack_env development;
   }
