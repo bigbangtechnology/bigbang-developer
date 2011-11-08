@@ -19,6 +19,10 @@ http {
     root /Users/paul/Sites/woople/public;
     passenger_enabled on;
     rack_env development;
+    
+    error_log /Users/camwest/Library/Logs/nginx/Woople.error.log;
+    access_log /Users/camwest/Library/Logs/nginx/Woople.access.log;
+
   }
 }
 
