@@ -10,19 +10,32 @@ http {
   sendfile on;
   keepalive_timeout 65;
 
-  passenger_root /Users/paul/.rvm/gems/ruby-1.9.2-p290/gems/passenger-3.0.9;
-  passenger_ruby /Users/paul/.rvm/bin/ruby;
+  passenger_root /Users/adamdoeler/.rvm/gems/ruby-1.9.2-p290@woople/gems/passenger-3.0.9;
+  passenger_ruby /Users/adamdoeler/.rvm/bin/ruby;
 
   server {
+    client_max_body_size 100M;
+
     listen 8080;
     server_name *.woople.local;
-    root /Users/paul/Sites/woople/public;
+    root /Users/adamdoeler/Sites/bigbang/woople/public;
     passenger_enabled on;
     rack_env development;
-    
-    error_log /Users/camwest/Library/Logs/nginx/Woople.error.log;
-    access_log /Users/camwest/Library/Logs/nginx/Woople.access.log;
 
+    error_log /Users/adamdoeler/Library/Logs/nginx/woople.error.log;
+    access_log /Users/adamdoeler/Library/Logs/nginx/woople.access.log;
+  }
+  
+  server {
+    client_max_body_size 100M;
+
+    listen 8080;
+    server_name woopleimporter.local;
+    root /Users/adamdoeler/Sites/bigbang/woople-importer/public;
+    passenger_enabled on;
+    rack_env development;
+
+    error_log /Users/adamdoeler/Library/Logs/nginx/woople-importer.error.log;
+    access_log /Users/adamdoeler/Library/Logs/nginx/woople-importer.access.log;
   }
 }
-
