@@ -10,7 +10,7 @@ http {
   sendfile on;
   keepalive_timeout 65;
 
-  passenger_root /Users/adamdoeler/.rvm/gems/ruby-1.9.2-p290@woople/gems/passenger-3.0.9;
+  passenger_root /Users/adamdoeler/.rvm/gems/ruby-1.9.3-p0/gems/passenger-3.0.11;
   passenger_ruby /Users/adamdoeler/.rvm/bin/ruby;
 
   server {
